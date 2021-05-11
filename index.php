@@ -1,3 +1,6 @@
+<?php
+$submit = filter_input(INPUT_POST, 'submit' )
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,16 @@
     <title>Oblíbené kategorie her</title>
 </head>
 <body>
+
+<?php
+if(isset($submit)) {
+echo"Formulář byl odeslán";     
+} else { ?>
+<form action="index.php" method="post" > 
+
+<form>
+ 
+
 <h1>Vyber oblíbené herní žánry</h1>
 </br>
 <input type="checkbox" id="game" name="genres[]">
@@ -38,7 +51,12 @@
 <br>
 <input type="checkbox" id="game" name="genres[]">
 <label for="game">Plošinové</label> </br>
+<br>
+</br>
 
-    
+<input type="submit" value="Odeslat" name="submit" >
+</form>
+<?php } ?>
+
 </body>
 </html>
