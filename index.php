@@ -1,7 +1,8 @@
 <?php
 $submit = filter_input(INPUT_POST, 'submit' );
-$genres = $_POST['genres00'];
+$genres = $_POST['genres'];
 var_dump($genres);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
