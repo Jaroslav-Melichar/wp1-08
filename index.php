@@ -18,14 +18,21 @@ $genres = $_POST['genres'];
 
 <?php
 if(isset($submit)) {
-echo"Formulář byl odeslán";  
-var_dump($genres);   
+echo"Formulář byl odeslán <br> ";  
+//var_dump($genres);
+ 
+
+foreach ($genres as $genre){
+    echo $genre."<br>";
+}
+
+
 } else { ?>
 <form action="index.php" method="post" > 
 
 <form>
  
- 
+    
 
 <h1>Vyber oblíbené herní žánry</h1>
 </br>
