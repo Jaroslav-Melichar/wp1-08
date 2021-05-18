@@ -1,7 +1,9 @@
 <?php
 $submit = filter_input(INPUT_POST, 'submit' );
+
+if(isset($_POST['genres'])){
 $genres = $_POST['genres'];
-var_dump($genres);
+}
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +18,8 @@ var_dump($genres);
 
 <?php
 if(isset($submit)) {
-echo"Formulář byl odeslán";     
+echo"Formulář byl odeslán";  
+var_dump($genres);   
 } else { ?>
 <form action="index.php" method="post" > 
 
