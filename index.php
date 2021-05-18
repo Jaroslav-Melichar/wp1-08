@@ -25,6 +25,7 @@ var_dump($genres);
 
 <form>
  
+ 
 
 <h1>Vyber oblíbené herní žánry</h1>
 </br>
